@@ -18,3 +18,13 @@ a{
 .imagen{
   width: 30%;
 }
+
+.columna{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.letra{
+  padding: 10px;
+}

@@ -5,13 +5,14 @@ import './App.css';
 import Main from './components/Main';
 import Admin from './components/Admin';
 import Play from './components/Play';
+import { SLASH, PATH_ADMIN, PATH_PLAY } from './utils/Constants';
 
 function App() {
   return (
     <BrowserRouter>
-        <Route exact path="/" component={()=><Main/>}></Route>
-        <Route exact path="/admin" component={()=><Admin/>}></Route>
-        <Route exact path="/play" component={()=><Play/>}></Route>
+        <Route exact path={SLASH} component={()=><Main/>}></Route>
+        <Route exact path={PATH_ADMIN} component={()=><Admin/>}></Route>
+        <Route exact path={PATH_PLAY} component={()=><Play/>}></Route>
     </BrowserRouter>
   );
 }
